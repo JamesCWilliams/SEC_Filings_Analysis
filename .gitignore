@@ -1,1 +1,21 @@
+# data — downloaded locally, never committed
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
 .venv
+
+# ML artefacts
+mlruns/
+mlartifacts/
+*.ckpt
+*.pt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# env
+.env
