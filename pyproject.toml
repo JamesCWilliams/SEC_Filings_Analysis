@@ -18,24 +18,23 @@ dependencies = [
     "datasets>=2.19,<3.0",
     "pandas>=2.2",
     "numpy>=1.26",
- 
+    "seaborn>=0.13.2",
     # ml
     "torch>=2.3",
     "transformers>=4.41",
     "scikit-learn>=1.4",
     "mlflow>=2.13",
     "evidently>=0.4",
- 
     # api
     "flask>=3.0",
     "flask-cors>=4.0",
     "pydantic>=2.7",
     "gunicorn>=22.0",
- 
     # utils
     "python-dotenv>=1.0",
     "rich>=13.7",
     "tqdm>=4.66",
+    "edgartools>=5.31.5",
 ]
  
 [project.optional-dependencies]
@@ -52,7 +51,8 @@ dev = [
 [project.scripts]
 sec-train = "sec_nlp.models.train:main"
 sec-serve = "sec_nlp.api.app:main"
-sec-sample = "sec_nlp.data_handling.sample:main"
+sec-sample = "sec_nlp.data_handling.sampling:main"
+sec-clean = "sec_nlp.data_handling.cleaning:main"
  
 # pytest
  
